@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #030014; /* Deep dark blue-black */
+  --color-foreground: #f8fafc; /* Slate 50 */
+  
+  --color-primary: #8b5cf6; /* Violet 500 */
+  --color-primary-foreground: #ffffff;
+  
+  --color-secondary: #0f172a; /* Slate 900 */
+  --color-secondary-foreground: #f8fafc;
+  
+  --color-muted: #1e293b; /* Slate 800 */
+  --color-muted-foreground: #94a3b8; /* Slate 400 */
+
+  --color-accent: #2e1065; /* Violet 950 */
+  --color-accent-foreground: #ddd6fe; /* Violet 200 */
+
+  --color-card: #0f172a; /* Slate 900 */
+  --color-card-foreground: #f8fafc;
+
+  --color-border: #1e293b; /* Slate 800 */
+}
+
+/* Base styles */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-foreground);
+}
+
+/* Animation utilities */
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
