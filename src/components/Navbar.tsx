@@ -33,6 +33,7 @@ export const Navbar = () => {
                 {/* Logo */}
                 <Link
                     href="/"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
                 >
                     {SITE_CONFIG.name}

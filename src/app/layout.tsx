@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import { SITE_CONFIG } from "@/lib/data";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 const greatVibes = Great_Vibes({
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body className={`${inter.className} ${greatVibes.variable} bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
+        <ScrollToTop />
         {children}
       </body>
     </html>
