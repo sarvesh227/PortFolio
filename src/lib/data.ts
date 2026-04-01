@@ -110,6 +110,15 @@ export const PROJECTS_DATA = [
         githubLink: "https://github.com/sarvesh227/CineFlix",
         image: "/cineflix.jpg",
     },
+    {
+        title: "Flower Shop",
+        techStack: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+        description:
+            "A modern e-commerce static website frontend incorporating a dynamic slideshow hero section, responsive products page, and interactive UI components.",
+        liveLink: "https://flower-shop-frontend-delta.vercel.app/",
+        githubLink: "https://github.com/sarvesh227/FlowerShop",
+        image: "/flower.png",
+    },
 ];
 
 export const ACHIEVEMENTS_DATA = [
